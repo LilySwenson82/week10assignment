@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-lg">
+  <main class="bg-body text-body row">
+    <div class="col">
+      <div class="card my-3">
+        <h3 class="card-header">
+          Item Tracker
+        </h3>
+        <div class="card-body container-lg">
+          <div class="row gy-2">
+            <div class="col-12 col-md-4">
+              <div class="input-group">
+                <label class="input-group-text" for="inputColor">Color</label>
+                <select class="form-select" id="inputColor">
+                  <option selected value="">Choose Color</option>
+                  <option value="Blue">Blue</option>
+                  <option value="Red">Red</option>
+                  <option value="Green">Green</option>
+                  <option value="White">White</option>
+                  <option value="Black">Black</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12 col-md-8">
+              <div class="input-group">
+                <input type="text" id="inputText" class="form-control" placeholder="Enter item here...">
+              </div>
+            </div>
+            <div class="col-12 d-grid">
+              <button class="btn btn-primary" type="button" id="buttonAdd">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <table class="table table-hover" id="itemList">
+            <thead>
+              <tr>
+                <th scope="col">Color</th>
+                <th scope="col">Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- this is where new items will go -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
